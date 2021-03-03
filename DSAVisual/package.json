@@ -5,6 +5,10 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
+    "packWin": "electron-packager . DSAVisual --platform=win --out ./dist/packager --arch=x64 --overwrite --app-version=1.0.0 --electron-version=11.3.0",
+    "packDarwin": "electron-packager . DSAVisual --platform=darwin --out ./dist/packager --arch=x64 --overwrite --app-version=1.0.0 --electron-version=11.3.0",
+    "packMas": "electron-packager . DSAVisual --platform=mas --out ./dist/packager --arch=x64 --overwrite --app-version=1.0.0 --electron-version=11.3.0",
+    "packLinux": "electron-packager . DSAVisual --platform=linux --out ./dist/packager --arch=x64 --overwrite --app-version=1.0.0 --electron-version=11.3.0",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,6 +16,12 @@
   "license": "ISC",
   "devDependencies": {
     "electron": "^11.3.0",
+    "electron-packager": "^15.2.0",
+    "getmac": "^5.17.0",
+    "iconv-lite": "^0.6.2",
+    "ip": "^1.1.5"
+  },
+  "dependencies": {
     "getmac": "^5.17.0",
     "iconv-lite": "^0.6.2",
     "ip": "^1.1.5"
