@@ -14,7 +14,7 @@ function createWindow () {
   genStatistics();
   
  
-  win.loadFile('index.html')
+  win.loadFile('Algorithms.html')
   //win.webContents.openDevTools()
 }
 
